@@ -9,7 +9,7 @@ class NotificationView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("Notification"),),
+      appBar: AppBar(title: const Text("Notification"),),
       body: Container(),
     );
   }
