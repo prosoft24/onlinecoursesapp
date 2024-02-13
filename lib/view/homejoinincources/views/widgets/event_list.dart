@@ -6,18 +6,14 @@ import 'package:onlinecoursesapp/view/homejoinincources/controllers/home_control
 
 import '../../../../model/notice_modal.dart';
 import '../../../../route/app_pages.dart';
-// import '../../../../route/app_pages.dart';
-// import '../../../../routes/app_pages.dart';
-// import '../../../../services/firebase/model/notice_modal.dart';
-// E:\jalal work\olinecourses\onlinecoursesapp\lib\
 
-
-// model\notice_modal.dart
 
 class EventList extends StatelessWidget {
   const EventList({Key? key}) : super(key: key);
 
   HomeController get controller => Get.find<HomeController>();
+
+  //HomeController get controller => Get.find<HomeController>();
 
   @override
   Widget build(BuildContext context) => AnimatedSize(
@@ -25,7 +21,7 @@ class EventList extends StatelessWidget {
         child: SizedBox(
           width: Get.width,
           child: FutureBuilder<List<Event>>(
-              future: controller.getEventList as dynamic ,
+              future: controller.getEventList as dynamic,
               builder: (context, snapshot) {
                 if (snapshot.connectionState == ConnectionState.waiting) {
                   return const LinearProgressIndicator();

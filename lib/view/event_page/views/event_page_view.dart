@@ -5,8 +5,10 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:intl/intl.dart';
-import 'package:onlinecoursesapp/model/notice_modal.dart';
+// import 'package:onlinecoursesapp/model/notice_modal.dart';
+import '../../../model/notice_modal.dart';
 import '../controllers/event_page_controller.dart';
+
 
 class EventPageView extends GetView<EventPageController> {
   const EventPageView({Key? key}) : super(key: key);

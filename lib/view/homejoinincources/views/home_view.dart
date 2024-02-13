@@ -7,6 +7,7 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:onlinecoursesapp/route/app_pages.dart';
+import 'package:onlinecoursesapp/view/homejoinincources/quizorassignment/homequiz.dart';
 import 'package:onlinecoursesapp/view/homejoinincources/views/pages/fav.dart';
 import '../controllers/home_controller.dart';
 import 'pages/resources.dart';
@@ -45,7 +46,7 @@ class HomeView extends GetView<HomeController> {
           ListView(
             padding: const EdgeInsets.only(top: headerHight),
             children: [
-              const SizedBox(height: 20.0),
+             // const SizedBox(height: 20.0),
               appFeatures(context),
               const SizedBox(height: 20.0),
               const EventList(),
@@ -58,56 +59,73 @@ class HomeView extends GetView<HomeController> {
   Widget appFeatures(BuildContext context) => AnimatedSize(
         duration: const Duration(milliseconds: 100),
         curve: Curves.easeInOut,
-        child: Wrap(
-          alignment: WrapAlignment.center,
-          spacing: 40,
-          children: [
-            _buildCircularButton(context,
-                onPressed: () => Get.to(() => ResourcesBody(controller)),
-                iconData: FontAwesomeIcons.bookOpen,
-                label: "Resources",
-                color: Colors.pink.shade300),
-            _buildCircularButton(context,
-                onPressed: () => Get.toNamed(Routes.COURSE),
-                iconData: Icons.assignment,
-                label: "Courses",
-                color: Colors.green),
-            _buildCircularButton(context,
-                onPressed: () =>
-                    prevWeb(context, "https://classroom.google.com/"),
-                iconData: FontAwesomeIcons.chalkboardUser,
-                label: "Classroom",
-                color: Colors.red),
-            _buildCircularButton(context,
-                onPressed: () =>
-                    prevWeb(context, "https://kiitportal.kiituniversity.net/"),
-                iconData: Icons.quiz_rounded,
-                label: "Assignments",
-                color: Colors.blue),
-            _buildCircularButton(context,
-                onPressed: () => Get.to(() => const FavBody()),
-                iconData: Icons.star_border_outlined,
-                label: "Favourites",
-                color: Colors.purple.shade300),
-            _buildCircularButton(context,
-                onPressed: () => Get.toNamed(Routes.VIDEO_LECTURE),
-                iconData: Icons.video_camera_front_rounded,
-                label: "Lectures",
-                color: Colors.amber.shade400),
-          ],
-        ),
+        child: Container(
+           decoration: const BoxDecoration(
+         color: Color.fromARGB(255, 226, 221, 231),
+          borderRadius: BorderRadius.only(
+          
+            topLeft: Radius.circular(80),
+          ),),
+
+          child: Expanded(
+            flex: 2,
+              child: Container(
+                color: const  Color(0xFF66318d),
+                child: Container(
+                  width: double.infinity,
+                  decoration: const BoxDecoration(
+                      color: Colors.white,
+                      borderRadius: BorderRadius.only(
+                        topLeft: Radius.circular(50),
+                      )),
+            child: Wrap(
+              alignment: WrapAlignment.center,
+              spacing: 40,
+              children: [
+                _buildCircularButton(context,
+                    onPressed: () => Get.to(() => ResourcesBody(controller)),
+                    iconData: FontAwesomeIcons.bookOpen,
+                    label: "Resources",
+                    color: Colors.pink.shade300),
+                _buildCircularButton(context,
+                    onPressed: () => Get.toNamed(Routes.COURSE),
+                    iconData: Icons.assignment,
+                    label: "Courses",
+                    color: Colors.green),
+                _buildCircularButton(context,
+                    onPressed: () =>
+                        prevWeb(context, "https://classroom.google.com/"),
+                    iconData: FontAwesomeIcons.chalkboardUser,
+                    label: "Classroom",
+                    color: Colors.red),
+                _buildCircularButton(context,
+                    onPressed: () => Get.to(() => const HomeQuiz()),
+                    iconData: Icons.quiz_rounded,
+                    label: "Assignments",
+                    color: Colors.blue),
+                _buildCircularButton(context,
+                    onPressed: () => Get.to(() => const FavBody()),
+                    iconData: Icons.star_border_outlined,
+                    label: "Favourites",
+                    color: Colors.purple.shade300),
+                _buildCircularButton(context,
+                    onPressed: () => Get.toNamed(Routes.VIDEO_LECTURE),
+                    iconData: Icons.video_camera_front_rounded,
+                    label: "Lectures",
+                    color: Colors.amber.shade400),
+              ],
+            ),
+          ),
+        ),),),
       );
 
   Container bodyHeader(BuildContext context) => Container(
         height: headerHight,
         decoration: const BoxDecoration(
-          gradient: LinearGradient(
-              colors: [Color(0xff3B3B98), Color(0xff0072B5)],
-              begin: Alignment.topLeft,
-              end: Alignment.bottomRight),
+         color: Color(0xFF66318d),
           borderRadius: BorderRadius.only(
-            bottomLeft: Radius.circular(30),
-            bottomRight: Radius.circular(30),
+          
+            bottomRight: Radius.circular(50),
           ),
         ),
         child: Column(
@@ -122,7 +140,7 @@ class HomeView extends GetView<HomeController> {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Text(
-                    "Hey Mate",
+                    "Hi galal",
                     style: GoogleFonts.exo(
                         fontSize: 28.0,
                         fontStyle: FontStyle.italic,

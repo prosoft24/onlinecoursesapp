@@ -1,11 +1,11 @@
 import 'dart:convert';
 
 class Event {
-  final String title;
-  final String description;
-  final DateTime dateTime;
-  final String? thumbnailUrl;
-  final String? url;
+  late String title;
+  late String description;
+  late DateTime dateTime;
+  late String? thumbnailUrl;
+  late String? url;
   Event({
     required this.title,
     required this.description,
