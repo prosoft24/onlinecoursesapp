@@ -81,7 +81,7 @@ class HomeView extends GetView<HomeController> {
             _buildCircularButton(context,
                 onPressed: () =>
                     prevWeb(context, "https://kiitportal.kiituniversity.net/"),
-                iconData: Icons.expand_more,
+                iconData: Icons.quiz_rounded,
                 label: "Assignments",
                 color: Colors.blue),
             _buildCircularButton(context,

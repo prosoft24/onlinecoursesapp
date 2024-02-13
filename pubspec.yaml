@@ -52,7 +52,7 @@ flutter:
     - assets/images/
     - assets/data/
     - assets/svg/
-    - assets/images/jpg/
+    # - assets/images/jpg/
     - assets/images/png/
     - assets/images/svg/
     - assets/icons/png/
