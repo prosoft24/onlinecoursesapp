@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:onlinecoursesapp/view/homejoinincources/quizorassignment/compieted.dart';
-import 'package:onlinecoursesapp/view/homejoinincources/quizorassignment/option.dart';
+import 'package:onlinecoursesapp/view/homejoinincources/views/pages/quizorassignment/compieted.dart';
+import 'package:onlinecoursesapp/view/homejoinincources/views/pages/quizorassignment/option.dart';
 
 class HomeQuiz extends StatefulWidget {
   const HomeQuiz({super.key});
@@ -15,7 +15,7 @@ class _HomeQuizState extends State<HomeQuiz> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Padding(
-        padding: const EdgeInsets.only(top: 22, left: 5, right: 5),
+        padding: const EdgeInsets.only(top: 22, left: 6, right: 5),
         child: Column(
           children: [
             SizedBox(

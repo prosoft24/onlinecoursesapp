@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:onlinecoursesapp/view/notification.dart';
 import 'package:onlinecoursesapp/view/widget/home/carditemscources.dart';
 
 import 'package:onlinecoursesapp/view/widget/home/search_textformfield.dart';
@@ -31,7 +32,9 @@ class HomeScreen extends StatelessWidget {
                 child: Align(
                   alignment: Alignment.centerRight,
                   child: IconButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      () => Get.to(() =>  NotificationView ());
+                    },
                     icon: const Icon(
                       Icons.notification_add,
                       color: Colors.blueAccent,

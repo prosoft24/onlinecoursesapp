@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:onlinecoursesapp/view/homejoinincources/quizorassignment/homequiz.dart';
+import 'package:onlinecoursesapp/view/homejoinincources/views/pages/quizorassignment/homequiz.dart';
 
 
 class Completed extends StatelessWidget {
@@ -16,10 +16,10 @@ class Completed extends StatelessWidget {
           width: double.infinity,
           child: Stack(children: [
             Container(
-              height: 340,
+              height: 341,
               width: double.infinity,
               decoration: BoxDecoration(
-                  color: Color(0xffA42FC1),
+                  color: const Color(0xffA42FC1),
                   borderRadius: BorderRadius.circular(20)),
               child: Center(
                   child: CircleAvatar(

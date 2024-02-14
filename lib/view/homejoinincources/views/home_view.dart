@@ -7,7 +7,7 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:onlinecoursesapp/route/app_pages.dart';
-import 'package:onlinecoursesapp/view/homejoinincources/quizorassignment/homequiz.dart';
+import 'package:onlinecoursesapp/view/homejoinincources/views/pages/quizorassignment/homequiz.dart';
 import 'package:onlinecoursesapp/view/homejoinincources/views/pages/fav.dart';
 import '../controllers/home_controller.dart';
 import 'pages/resources.dart';
